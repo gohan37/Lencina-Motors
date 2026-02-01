@@ -1,0 +1,36 @@
+.service-card {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.service-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 30px rgba(30, 44, 255, 0.3);
+}
+
+.service-card:hover img {
+  transform: scale(1.1);
+}
+
+.service-card:focus {
+  outline: 2px solid #1e2cff;
+  outline-offset: 4px;
+}
+
+.service-card img {
+  transition: transform 0.3s ease-in-out;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-card {
+    cursor: pointer;
+  }
+
+  .service-card:active {
+    transform: scale(0.98);
+  }
+}

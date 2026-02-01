@@ -1,0 +1,65 @@
+.navbar {
+  background-color: #0a0f8f;
+  color: white;
+  padding: 1rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.nav-left img {
+  width: 32px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hamburguesa */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #0a0f8f;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 1rem 0;
+    gap: 16px;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

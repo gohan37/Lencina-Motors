@@ -1,0 +1,140 @@
+.reserva-form input:focus,
+.reserva-form select:focus,
+.reserva-form textarea:focus {
+  outline: none;
+  border-color: #1e2cff !important;
+  box-shadow: 0 0 10px rgba(30, 44, 255, 0.2);
+}
+
+.reserva-form button {
+  transition: all 0.3s ease;
+}
+
+.reserva-form button:hover {
+  background-color: #0a0f8f !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 44, 255, 0.3);
+}
+
+.reserva-form button:active {
+  transform: translateY(0);
+}
+
+/* Tablet y dispositivos medianos */
+@media (max-width: 1024px) {
+  #reserva .container {
+    padding: 0 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #reserva .container h2 {
+    font-size: 1.8rem;
+  }
+
+  #reserva .container {
+    padding: 0 20px;
+  }
+
+  /* Cambiar grid de 2 columnas a 1 */
+  .form-container {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+
+  /* Inputs responsive */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="time"],
+  select,
+  textarea {
+    font-size: 16px !important;
+    padding: 14px !important;
+  }
+
+  /* Fecha y hora en una sola columna en mobile */
+  .row-group {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+
+  /* Formulario padding reducido */
+  form {
+    padding: 20px !important;
+  }
+
+  /* Info box padding reducido */
+  .info-box {
+    padding: 20px !important;
+  }
+
+  /* Botón más grande en mobile */
+  button {
+    padding: 14px 20px !important;
+    font-size: 16px !important;
+  }
+
+  /* Labels más grandes en mobile */
+  label {
+    font-size: 15px !important;
+    font-weight: 600;
+  }
+
+  /* Títulos responsive */
+  h3 {
+    font-size: 1.3rem !important;
+  }
+
+  /* Párrafos responsive */
+  p {
+    font-size: 14px !important;
+    line-height: 1.6;
+  }
+}
+
+/* Dispositivos muy pequeños */
+@media (max-width: 480px) {
+  #reserva .container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="time"],
+  select,
+  textarea {
+    font-size: 16px !important;
+    padding: 12px !important;
+  }
+
+  form {
+    padding: 15px !important;
+  }
+
+  .info-box {
+    padding: 15px !important;
+  }
+
+  button {
+    padding: 12px 15px !important;
+    font-size: 15px !important;
+  }
+
+  label {
+    font-size: 14px !important;
+  }
+
+  h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .blue-line {
+    width: 40px !important;
+  }
+}
